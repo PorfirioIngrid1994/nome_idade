@@ -1,0 +1,37 @@
+ # Solicita que o usuário digite o nome e a idade
+nome = input("Por favor, digite o seu nome: ")
+idade = input("Por favor, digite a sua idade em anos: ")
+
+if nome and idade:
+idade = int(idade)
+idade_em_dias = idade * 365
+idade_em_meses = idade * 12
+
+
+if idade % 2 == 0:
+idade_par_impar = "par"
+else:
+idade_par_impar = "ímpar"
+
+
+if " " in nome:
+com_espacos = "sim"
+else:
+com_espacos = "não"
+
+
+primeira_letra = nome[0]
+ultima_letra = nome[-1]
+
+
+print("Seu nome é", nome)
+print("Sua idade é", idade, "anos")
+print("Você possui uma idade", idade_par_impar)
+print("Sua idade em dias é", idade_em_dias, "dias")
+print("Sua idade em meses é de", idade_em_meses, "meses")
+print("Seu nome contém espaços?", com_espacos)
+print("Seu nome tem", len(nome), "letras (contando os espaços)")
+print("A primeira letra do seu nome é", primeira_letra)
+print("A última letra do seu nome é", ultima_letra)
+else:
+print("Por favor, preencha corretamente as lacunas...")
